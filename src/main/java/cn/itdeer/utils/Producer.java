@@ -60,8 +60,20 @@ public class Producer extends Thread{
                 loop_data_size = Constants.LOOP_DATA_NUMS;
                 while (loop_data_size > 0){
                     loop_data_size--;
-                    String message = "{\"TagName\":\"U70HFC60CP102" + getRandomValue() + "\",\"Value\":" + getRandomValue() + ",\"IsGood\":true,\"TimeStamp\":\"" + format.format(new Date()) + "\",\"SendTimeStamp\":\"" + format.format(new Date()) + "\"}";
+                    String message = "{\"tagName\":\"U70HFC60CP" + getRandomValue() + "\",\"value\":" + getRandomValue() + ",\"isGood\":true,\"piTimeStamp\":\"" + format.format(new Date()) + "\",\"sendTimeStamp\":\"" + format.format(new Date()) + "\"}";
                     producer.send(new ProducerRecord(topic_name,message));
+                    try {
+                        System.out.println(message);
+                        int a = getRandomValue();
+                        int time = 5;
+                        if(a>5){
+                            time = a;
+                        }else {
+                            time = time + a;
+                        }
+                        Thread.sleep(1000 * time);
+                    }catch (Exception e){}
+
                 }
             }
 
@@ -81,12 +93,12 @@ public class Producer extends Thread{
      * @return
      */
     private static int getRandomValue(){
-        return (int)(Math.random() * 1000);
+        return (int)(Math.random() * 20);
     }
 
 
     public static void main(String[] args) {
-        String message = "{\"TagName\":\"U70HFC60CP102" + getRandomValue() + "\",\"Value\":" + getRandomValue() + ",\"IsGood\":true,\"TimeStamp\":\" " + format.format(new Date()) + "\",\"SendTimeStamp\":\"" + format.format(new Date()) + "\"}";
+        String message = "{\"tagName\":\"U70HFC60CP" + getRandomValue() + "\",\"value\":" + getRandomValue() + ",\"isGood\":true,\"piTimeStamp\":\"" + format.format(new Date()) + "\",\"sendTimeStamp\":\"" + format.format(new Date()) + "\"}";
 
         System.out.println(message);
     }
