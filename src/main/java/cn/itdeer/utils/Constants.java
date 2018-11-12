@@ -16,11 +16,11 @@ public class Constants {
     /**
      * 参数默认值
      */
-    public static Integer THREAD_NUMS = 6;
-    public static Integer LOOP_NUMS = 1000;
+    public static Integer THREAD_NUMS = 1;
+    public static Integer LOOP_NUMS = 100;
     public static Integer LOOP_DATA_NUMS = 10000;
     public static Integer MESSAGE_SIZE_NUMS = 100;
-    public static String TOPIC_NAME = "sundafei_zhouwu_demo";
+    public static String TOPIC_NAME = "itdeer";
 
     public static Integer PARTITION_NUMS = 3;
     public static Integer REPLICATION_NUMS = 1;
@@ -38,7 +38,8 @@ public class Constants {
      * 以host:port形式,多个以逗号分隔host1:port1,host2:port2
      */
     public static final String BOOTSTRAP_SERVERS = ProducerConfig.BOOTSTRAP_SERVERS_CONFIG;
-    public static final String BOOTSTRAP_SERVERS_VALUE = "10.154.96.72:6667,10.154.96.73:6667,10.154.96.74:6667";
+//    public static final String BOOTSTRAP_SERVERS_VALUE = "10.154.96.72:6667,10.154.96.73:6667,10.154.96.74:6667";
+    public static final String BOOTSTRAP_SERVERS_VALUE = "172.24.4.235:6667,172.24.4.236:6667,172.24.4.237:6667";
 //    public static final String BOOTSTRAP_SERVERS_VALUE = "znhcy-edcjrd-01.edcadpd.zhenergy.com.cn:6667,znhcy-edcjrd-02.edcadpd.zhenergy.com.cn:6667,znhcy-edcjrd-03.edcadpd.zhenergy.com.cn:6667";
 
     /**
