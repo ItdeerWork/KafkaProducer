@@ -38,8 +38,8 @@ public class Constants {
      * 以host:port形式,多个以逗号分隔host1:port1,host2:port2
      */
     public static final String BOOTSTRAP_SERVERS = ProducerConfig.BOOTSTRAP_SERVERS_CONFIG;
-//    public static final String BOOTSTRAP_SERVERS_VALUE = "10.154.96.72:6667,10.154.96.73:6667,10.154.96.74:6667";
-    public static final String BOOTSTRAP_SERVERS_VALUE = "172.24.4.235:6667,172.24.4.236:6667,172.24.4.237:6667";
+    public static final String BOOTSTRAP_SERVERS_VALUE = "10.154.96.72:6667,10.154.96.73:6667,10.154.96.74:6667";
+//    public static final String BOOTSTRAP_SERVERS_VALUE = "172.24.4.235:6667,172.24.4.236:6667,172.24.4.237:6667";
 //    public static final String BOOTSTRAP_SERVERS_VALUE = "znhcy-edcjrd-01.edcadpd.zhenergy.com.cn:6667,znhcy-edcjrd-02.edcadpd.zhenergy.com.cn:6667,znhcy-edcjrd-03.edcadpd.zhenergy.com.cn:6667";
 
     /**
