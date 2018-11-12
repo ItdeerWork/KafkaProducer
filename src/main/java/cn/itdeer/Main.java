@@ -1,6 +1,7 @@
 package cn.itdeer;
 
 import cn.itdeer.utils.Constants;
+import cn.itdeer.utils.FullCodeProducer;
 import cn.itdeer.utils.Producer;
 
 /**
@@ -37,8 +38,10 @@ public class Main {
          * 启动线程开始执行
          */
         for (int i = 0; i < Constants.THREAD_NUMS; i++) {
-            Thread thread = new Producer(Constants.TOPIC_NAME);
+//            Thread thread = new Producer(Constants.TOPIC_NAME);
+            Thread thread = new FullCodeProducer(Constants.TOPIC_NAME);
             thread.start();
+
         }
 
     }
