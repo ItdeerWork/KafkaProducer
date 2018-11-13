@@ -60,7 +60,7 @@ public class Producer extends Thread{
                 loop_data_size = Constants.LOOP_DATA_NUMS;
                 while (loop_data_size > 0){
                     loop_data_size--;
-                    String message = "{\"tagName\":\"U70HFC60CP" + getRandomValue() + "\",\"value\":" + getRandomValue() + ",\"isGood\":true,\"piTimeStamp\":\"" + format.format(new Date()) + "\",\"sendTimeStamp\":\"" + format.format(new Date()) + "\"}";
+                    String message = "{\"tagName\":\"U70HFC60CP" + getRandomValue() + "\",\"value\":" + getRandomValue() + ",\"isGood\":true,\"piTS\":\"" + format.format(new Date()) + "\",\"sendTS\":\"" + format.format(new Date()) + "\"}";
                     producer.send(new ProducerRecord(topic_name,message));
                     try {
                         System.out.println(message);
@@ -96,10 +96,4 @@ public class Producer extends Thread{
         return (int)(Math.random() * 20);
     }
 
-
-    public static void main(String[] args) {
-        String message = "{\"tagName\":\"U70HFC60CP" + getRandomValue() + "\",\"value\":" + getRandomValue() + ",\"isGood\":true,\"piTimeStamp\":\"" + format.format(new Date()) + "\",\"sendTimeStamp\":\"" + format.format(new Date()) + "\"}";
-
-        System.out.println(message);
-    }
 }

@@ -1,22 +1,5 @@
-Skip to content
- 
-Search or jump to…
 
-Pull requests
-Issues
-Marketplace
-Explore
- @itdeer Sign out
-0
-0 0 ItdeerLab/itdeerlab-admin
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
-itdeerlab-admin/.gitignore
-849a913  on 7 Jul
-@itdeer itdeer [itdeerlab-admin-0004] add Access Record AOP
-     
-56 lines (43 sloc)  578 Bytes
-
-### STS ###
+### STS 开发工具 ###
 .apt_generated
 .classpath
 .factorypath
@@ -25,13 +8,24 @@ itdeerlab-admin/.gitignore
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
+
+
+### Maven 工具 ###
+mvnw
+mvnw.cmd
+dependency-reduced-pom.xml
+
+
+
+### IntelliJ IDEA 开发工具 ###
 .idea
 *.iws
 *.iml
 *.ipr
 
-### NetBeans ###
+
+
+### NetBeans 开发工具 ###
 /nbproject/private/
 /build/
 /nbbuild/
@@ -39,20 +33,25 @@ itdeerlab-admin/.gitignore
 /nbdist/
 /.nb-gradle/
 
-# Compiled class file
+
+
+### Compiled class file 编译文件 ###
 *.class
 .git
 
-# Log file
+
+
+### Log file 日志文件 ###
 *.exceptionRecord
 
-# BlueJ files
-*.ctxt
 
-# Mobile Tools for Java (J2ME)
+
+### Mobile Tools for Java (J2ME) 手机开发相关工具 ###
 .mtj.tmp/
 
-# Package Files #
+
+
+### Package Files 打包文件 ###
 *.jar
 *.war
 *.nar
@@ -62,25 +61,11 @@ itdeerlab-admin/.gitignore
 *.rar
 target/
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
 
+
+### 其他文件 ###
+*.ctxt
+hs_err_pid*
 !.mvn/wrapper/maven-wrapper.jar
 .mvn
-
 /tmp/
-
-© 2018 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Press h to open a hovercard with more details.
-Support us  •  Feedback?
