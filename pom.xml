@@ -9,7 +9,6 @@
     <groupId>KafkaProducer</groupId>
     <artifactId>KafkaProducer</artifactId>
     <version>1.0.0</version>
-    <packaging>jar</packaging>
 
     <!-- 添加依赖 -->
     <dependencies>
